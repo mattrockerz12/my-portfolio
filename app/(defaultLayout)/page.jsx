@@ -7,6 +7,7 @@ import Iconbox from "../ui/Iconbox/Iconbox";
 import Skill from "../ui/Skill/Skill";
 import Resume from "../ui/Resume/ResumeSection";
 import PortfolioSection from "../ui/Portfolio/PortfolioSection";
+import Contact from "../ui/Contact/Contact";
 
 export default function page() {
   const {
@@ -30,6 +31,11 @@ export default function page() {
       <Skill data={skillData} data-aos="fade-right" />
       <Resume data={resumeData} />
       <PortfolioSection data={portfolioData} data-aos="fade-right" />
+      <Contact
+        data={contactData}
+        socialData={socialData}
+        data-aos="fade-right"
+      />
     </>
   );
 }
